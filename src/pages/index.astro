@@ -1,0 +1,35 @@
+---
+import Instagram from "../components/icons/instagram.astro";
+import Whatsapp from "../components/icons/whatsapp.astro";
+import Youtube from "../components/icons/youtube.astro";
+import Layout from "../layouts/Layout.astro";
+import Packs from "../layouts/Packs.astro";
+import Header from "../layouts/Header.astro";
+---
+
+<Layout title="Welcome to Astro.">
+	<header class="flex items-center justify-center" id="inicio">
+		<Header />
+	</header>
+	<main>
+		<Packs />
+	</main>
+	<footer class="flex items-center justify-center flex-col gap-3 text-white">
+		<hr class="size-2 w-3/4" />
+		<h2 class="">Para mas contrataciones</h2>
+		<div class="flex items-center justify-center gap-4">
+			<Instagram />
+			<Youtube />
+			<Whatsapp />
+		</div>
+	</footer>
+</Layout>
+
+<style>
+	.background-image {
+		background: url(/public/partybackground.webp);
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+</style>
