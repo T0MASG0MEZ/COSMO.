@@ -5,24 +5,46 @@ import Youtube from "../components/icons/youtube.astro";
 ---
 
 <nav class="flex items-center justify-around p-4 fixed z-50 w-full bg-black">
-    <div class="text-white">
-        <a href="#inicio" class="text-2xl font-semibold">COSMO.</a>
+    <div class="">
+        <a
+            href="#inicio"
+            class="text-white text-2xl font-bold tracking-wide hover:text-yellow-500 transition-all duration-300
+            ">COSMO.</a
+        >
     </div>
     <ul class="flex items-center gap-4 text-white">
         <li>
-            <a href="#">
-                <Instagram />
+            <a href="https://www.instagram.com/cozmoar/" target="_blank"
+            class="hover:text-slate-500 transition-all duration-300">
+                <Instagram class="md:size-7" />
             </a>
         </li>
         <li>
-            <a href="#">
-                <Youtube />
+            <a href="#"
+            class="hover:text-slate-500 transition-all duration-300">
+                <Youtube class="md:size-7" />
             </a>
         </li>
         <li>
-            <a href="#">
-                <Whatsapp />
+            <a href="#"
+            class="hover:text-slate-500 transition-all duration-300">
+                <Whatsapp class="md:size-7" />
             </a>
         </li>
     </ul>
 </nav>
+
+<script>
+    document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+
+            const targetId = this.getAttribute("href").substring(1);
+            const targetElement = document.getElementById(targetId);
+
+            targetElement.scrollIntoView({
+                behavior: "smooth",
+            });
+        });
+    });
+</script>
