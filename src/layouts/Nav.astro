@@ -16,7 +16,7 @@ import Youtube from "../components/icons/youtube.astro";
     <ul class="flex items-center gap-4 text-white">
         <li>
             <a
-                href="https://www.instagram.com/cozmoar/"
+                href="#"
                 target="_blank"
                 rel="noopener noreferrer"
                 class="hover:text-slate-500 transition-all duration-300"
@@ -42,20 +42,3 @@ import Youtube from "../components/icons/youtube.astro";
         </li>
     </ul>
 </nav>
-
-<script>
-    document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-        anchor.addEventListener("click", function (e) {
-            e.preventDefault();
-
-            const targetId = this.getAttribute("href").substring(1);
-            const targetElement = document.getElementById(targetId);
-
-            if (targetElement) {
-                targetElement.scrollIntoView({
-                    behavior: "smooth",
-                });
-            }
-        });
-    });
-</script>
