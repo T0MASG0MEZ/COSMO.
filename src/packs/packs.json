@@ -2,22 +2,22 @@
     {
         "title": "Pack - Tech House",
         "description": "Gordo, Fisher, Dom Dolla, ACRAZE, Chris Lake, Mau P, Cloone, Dennis Cruz, Eli Brown, James Hype, Andruss, Marrin Inik, Claptone, Classmatic y muchos mas",
-        "price": "$4.500",
-        "image": "/techhouseimage.jpg",
+        "price": "$5.000",
+        "image": "/techhouseimage.webp",
         "redireccion" : "https://wa.link/swyyrm"
     },
     {
         "title": "Pack - Afro House",
         "description": "Keinemusik, BlackCoffe, Adam Port, Maxi Meraki, Liva K, Moojo, Rampa, &ME, Marasi, Wakyin y muchos mas",
         "price": "$5.000",
-        "image": "/afrohouseimage.jpg",
+        "image": "/afrohouseimage.webp",
         "redireccion" : "https://wa.link/3cgmur"
     },
     {
         "title": "Pack - Melodic House",
         "description": "Anyma, Adriatique, John Summit, Camelphat, Argy, RUFUS DU SOL, Layton Giordani, ARTBAT, Mohse, WhoMadeWho, Goom Goom, Kevin de Vries, Monolink, Oostil y muchos mas",
-        "price": "$5.500",
-        "image": "/melodiimage.jpg",
+        "price": "$6.000",
+        "image": "/melodiimage.webp",
         "redireccion" : "https://wa.link/9xa8uc"
     }
 ]

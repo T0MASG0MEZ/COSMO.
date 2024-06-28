@@ -4,17 +4,29 @@ import "@fontsource-variable/montserrat";
 import Nav from "./Nav.astro";
 
 const { title } = Astro.props;
-
 ---
 
 <!doctype html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="description" content="Astro description" />
 		<meta name="viewport" content="width=device-width" />
+		<!--    SEO      -->
+		<title>{title}</title>
 		<meta name="generator" content={Astro.generator} />
-		<title>{ title }</title>
+		<meta name="description" content="Astro description" />
+		<link rel="icon" href="/logo-cozmo.webp" />
+		<meta
+			name="keywords"
+			content="drivers de música COZMO, compra drivers de música COZMO, drivers de audio COZMO, drivers de sonido COZMO, drivers de alta calidad COZMO, venta de drivers de música COZMO, drivers profesionales COZMO, drivers para equipos de sonido COZMO, drivers de música premium COZMO, mejores drivers de música COZMO, drivers de música para estudios COZMO, drivers de música baratos COZMO, drivers de música online COZMO, drivers de música avanzados COZMO, tienda de drivers de música COZMO"
+		/>
+		<meta
+			name="description"
+			content="En COZMO, somos líderes en la venta de drivers de música de alta calidad. Descubre nuestra amplia gama de drivers de sonido, diseñados para ofrecer un rendimiento superior tanto para profesionales como para entusiastas de la música. Compra drivers de audio premium en COZMO y mejora la calidad de tu sonido con nuestra tecnología avanzada. Desde estudios de grabación hasta sistemas de sonido en vivo, nuestros drivers están diseñados para ofrecer precisión y durabilidad. Visita nuestra tienda online y encuentra los mejores drivers de música con COZMO."
+		/>
+		<meta property="og:title" content="COZMO." />
+		<meta property="og:site_name" content="COZMO." />
+		<meta property="og:url" content="https://cozmo-one.vercel.app/" />
 	</head>
 	<body class="relative h-full w-full bg-black">
 		<div
